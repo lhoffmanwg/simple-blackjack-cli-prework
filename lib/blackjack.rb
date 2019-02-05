@@ -56,5 +56,5 @@ end
    # hit?(total)
   #end 
 #end_game
-end
+#end
     
