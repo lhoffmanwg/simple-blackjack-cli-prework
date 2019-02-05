@@ -33,11 +33,11 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-def hit?(total)
+def hit?(old_total)
   prompt_user
   input = get_user_input
   if input == "h" 
-    total = total + deal_card
+    total = old_total + deal_card
   elsif input != "s" && input != "h"
     invalid_command 
     prompt_user
@@ -49,12 +49,12 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-#def runner
- # welcome
-  #total = initial_round
-  #until total > 21 do 
-   # hit?(total)
-  #end 
+def runner
+  welcome
+  total = initial_round
+  until total > 21 do 
+    total = hit?(total)
+  end 
 #end_game
-#end
+end
     
