@@ -15,7 +15,7 @@ def prompt_user
 end
 
 def get_user_input
-  input = gets.chomp
+  return gets.chomp
 end
 
 def end_game(number)
@@ -49,12 +49,12 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-def runner
-  welcome
-  total = initial_round
-  until total > 21 do 
-    hit?(total)
-  end 
+#def runner
+ # welcome
+  #total = initial_round
+  #until total > 21 do 
+   # hit?(total)
+  #end 
 #end_game
 end
     
